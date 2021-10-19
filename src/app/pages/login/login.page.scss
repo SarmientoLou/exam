@@ -1,0 +1,21 @@
+ion-content{
+    --background: url("../../../assets/images/bg.jpg") no-repeat center/cover fixed;
+}
+
+*{
+    text-align: center;
+}
+ion-button{
+ 
+    border-radius: 20px;
+
+}
+
+.container{
+    margin-top: 90%;
+    opacity: 0.8;
+}
+ion-input{
+    border-bottom: 1px solid lightgray;
+}
+

@@ -1,0 +1,32 @@
+ion-segment ion-label{
+    font-size:18px;
+}
+
+ion-icon{
+    font-size: 30px;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    padding-right: 3px;
+    margin-left: 1px;
+}
+
+ion-segment-button:hover ion-label{
+    color: rgb(209, 206, 0);
+}
+
+ion-segment-button:active ion-label{
+    color: rgb(209, 206, 0);
+}
+
+.name{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.vision{
+    font-size: 14px;
+}
+
+ion-label{
+    text-align: center;
+}

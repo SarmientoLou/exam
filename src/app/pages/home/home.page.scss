@@ -1,0 +1,21 @@
+.logo{
+    width: 120px;
+    display: block;
+    margin-left: 25%;
+}
+
+ion-icon{
+    float: right;
+    font-size: 40px;
+    color: #444444;
+}
+
+ion-content{
+    --background: url("../../../assets/char/homebg.jpg") no-repeat center/cover fixed;
+    white-space:normal;
+}
+ion-avatar{
+    width: 50px;
+    height: 50px;
+    margin-left: -10%;
+}

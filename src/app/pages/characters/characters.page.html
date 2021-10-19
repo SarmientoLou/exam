@@ -1,0 +1,270 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="person-circle-outline" class="icons"></ion-icon>Characters
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+  <ion-segment (ionChange)="segment-Changed($event)" color="secondary" [(ngModel)]="type"
+    mode="android"
+    [(ngModel)]="segmentModel" 
+    (ionChange)="segmentChanged($event)">
+
+    <ion-segment-button value="four star">
+      <ion-label>4<ion-icon name="star"></ion-icon></ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="five star">
+      <ion-label>5<ion-icon name="star"></ion-icon></ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+      <div class="four">
+      <ion-card *ngIf="segmentModel === 'four star'" >
+        <ion-card color="danger">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/four/bennett.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Bennett</h2>
+                <h3 class="vision">PYRO</h3>
+                <h3 class="vision">MONDSTADT</h3>
+                </ion-label>
+            <ion-label>
+              An orphan discovered by an elderly adventurer as a baby, Bennett was raised in Mondstadt's Adventurers' Guild. He is the one and only member of "Benny's Adventure Team," as everyone else left the team after experiencing the constant misfortune that follows him.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="primary">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/four/xingqui.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Xingqui</h2>
+                <h3 class="vision">HYDRO</h3>
+                <h3 class="vision">LIYUE</h3>
+                </ion-label>
+            <ion-label>
+              He is the second son of the Guild Manager of the Feiyun Commerce Guild, an influential group in Liyue, and is also a self-proclaimed practitioner of the Guhua Clan's arts.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="danger">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/four/amber.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Amber</h2>
+                <h3 class="vision">PYRO</h3>
+                <h3 class="vision">MONDSTADT</h3>
+                </ion-label>
+            <ion-label>
+              He is the second son of the Guild Manager of the Feiyun Commerce Guild, an influential group in Liyue, and is also a self-proclaimed practitioner of the Guhua Clan's arts.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="secondary">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/four/kaeya.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Kaeya</h2>
+                <h3 class="vision">CRYO</h3>
+                <h3 class="vision">MONDSTADT</h3>
+                </ion-label>
+            <ion-label>
+              Kaeya is the Cavalry Captain of the Knights of Favonius. He is held in high regard by the people of Mondstadt — even with all his eccentricities and secrets.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="danger">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/four/xiangling.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Xiangling</h2>
+                <h3 class="vision">PYRO</h3>
+                <h3 class="vision">LIYUE</h3>
+                </ion-label>
+            <ion-label>
+              She is the Head Chef at the Wanmin Restaurant and runs it alongside her father Chef Mao. As a chef, Xiangling isn't afraid to try out different recipes or "exotic" ingredients... Making her dishes sometimes quite unique.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="tertiary">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/four/beidou.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Beidou</h2>
+                <h3 class="vision">ELECTRO</h3>
+                <h3 class="vision">LIYUE</h3>
+                </ion-label>
+            <ion-label>
+              She is the captain of The Crux, a renowned crew in Liyue. Besides her capabilities as a fleet captain and her immense strength, many in Liyue know her for her lack of fear towards the Tianquan of the Liyue Qixing, Ningguang — a trait that the other woman appreciates, yet grows irritated by.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="tertiary">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/four/sara.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Kujou Sara</h2>
+                <h3 class="vision">ELECTRO</h3>
+                <h3 class="vision">INAZUMA</h3>
+                </ion-label>
+            <ion-label>
+              A tengu, Sara is the adopted daughter of the Kujou Clan of the Tenryou Commission. Loyal to both her clan and the Shogun, Kujou Sara carries out her orders to the Shogun's will.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="danger">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/four/thoma.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Thoma</h2>
+                <h3 class="vision">PYRO</h3>
+                <h3 class="vision">INAZUMA</h3>
+                </ion-label>
+            <ion-label>
+             N/A
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-card>
+      </div>
+
+      <div class="five"  *ngIf="segmentModel === 'five star'">
+        <ion-card color="medium">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/five/traveler.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Aether and Lumine</h2>
+                <h3 class="vision">ADAPTIVE</h3>
+                <h3 class="vision">OUTLANDERS</h3>
+                </ion-label>
+            <ion-label>
+              The Traveler is the playable protagonist of Genshin Impact. At the beginning of the game, both genders are twin siblings from another world, traveling throughout the universe, until an unknown god blocked and captured one of them, and sealed their power to travel, leaving them stranded on Teyvat. They are accompanied by a travel companion named Paimon throughout their journey.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="success">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/five/venti.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Venti</h2>
+                <h3 class="vision">ANEMO</h3>
+                <h3 class="vision">MONDSTADT</h3>
+                </ion-label>
+            <ion-label>
+              He is a free-spirited, wine-loving bard in Mondstadt and the current mortal vessel of Barbatos, the Anemo Archon. He first appears during the Archon Quest Prologue: Act I - The Outlander Who Caught the Wind.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="warning">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/five/zhongli.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Zhongli</h2>
+                <h3 class="vision">GEO</h3>
+                <h3 class="vision">LIYUE</h3>
+                </ion-label>
+            <ion-label>
+              He is later revealed to be the current vessel of the Geo Archon, Morax, who has decided to experience the world from the perspective of a mortal
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="tertiary">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/five/baal.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Baal</h2>
+                <h3 class="vision">ELECTRO</h3>
+                <h3 class="vision">INAZUMA</h3>
+                </ion-label>
+            <ion-label>
+              She controls a puppet while meditating inside the Plane of Euthymia. Her current form is the vessel of Beelzebul, the current Electro Archon of Inazuma.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="success">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/five/jean.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Jean</h2>
+                <h3 class="vision">ANEMO</h3>
+                <h3 class="vision">MONDSTADT</h3>
+                </ion-label>
+            <ion-label>
+              The daughter of Frederica Gunnhildr and Seamus Pegg, the older sister of Barbara, and a descendant of the prestigious Gunnhildr Clan, Jean is the Acting Grand Master of the Knights of Favonius. She is always busy handling unrest across Mondstadt and of course, tirelessly working to maintain the City of Freedom.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="secondary">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/five/ganyu.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Ganyu</h2>
+                <h3 class="vision">CRYO</h3>
+                <h3 class="vision">LIYUE</h3>
+                </ion-label>
+            <ion-label>
+              She serves as an emissary and secretary for the Liyue Qixing.
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card color="warning">
+          <ion-card-header>
+            <img class="card" src="../../../assets/char/five/itto.png">
+          </ion-card-header>
+          <ion-card-content>
+                <ion-label>
+                  <h2 class="name">Arataki Itto</h2>
+                <h3 class="vision">GEO</h3>
+                <h3 class="vision">INAZUMA</h3>
+                </ion-label>
+                N/A
+                <ion-label>
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+</ion-content>
